@@ -12,10 +12,14 @@ var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
+var home_component_1 = require('./component/home/home.component');
 var about_component_1 = require('./component/about.component');
+var PageNotFound_component_1 = require('./component/PageNotFound.component');
 var appRoutes = [
+    { path: 'home', component: home_component_1.HomeComponent },
     { path: 'about', component: about_component_1.AboutComponent },
-    { path: '', redirectTo: '/', pathMatch: 'full' }
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: PageNotFound_component_1.PageNotFoundComponent }
 ];
 var AppModule = (function () {
     function AppModule() {
@@ -23,7 +27,7 @@ var AppModule = (function () {
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(appRoutes)],
-            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent],
+            declarations: [app_component_1.AppComponent, about_component_1.AboutComponent, PageNotFound_component_1.PageNotFoundComponent, home_component_1.HomeComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
