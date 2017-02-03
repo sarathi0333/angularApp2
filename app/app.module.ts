@@ -7,11 +7,11 @@ import { AboutComponent } from './component/about.component';
 const appRoutes: Routes = [
     { path: 'about', component: AboutComponent},
     { path: '', redirectTo: '/', pathMatch: 'full'}
-]
+];
 
 
 @NgModule({
-    imports: [BrowserModule, RouterModule, Routes],
+    imports: [BrowserModule, RouterModule],
     declarations: [AppComponent, AboutComponent],
     bootstrap: [AppComponent]
 })
