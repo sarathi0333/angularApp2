@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './component/home/home.component' 
-import { AboutComponent } from './component/about.component';
-import { PageNotFoundComponent } from './component/PageNotFound.component';
+import { AboutComponent } from './component/about/about.component';
+import { PageNotFoundComponent } from './component/PageNotFound/PageNotFound.component';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },

@@ -13,8 +13,8 @@ var platform_browser_1 = require('@angular/platform-browser');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./component/home/home.component');
-var about_component_1 = require('./component/about.component');
-var PageNotFound_component_1 = require('./component/PageNotFound.component');
+var about_component_1 = require('./component/about/about.component');
+var PageNotFound_component_1 = require('./component/PageNotFound/PageNotFound.component');
 var appRoutes = [
     { path: 'home', component: home_component_1.HomeComponent },
     { path: 'about', component: about_component_1.AboutComponent },
