@@ -1,0 +1,31 @@
+{
+    "name": "angularappone",
+    "version": "1.0.0",
+    "description": "My First angular app Evn set up",
+    "scripts": {
+        "start": "concurrently \"npm run tsc:w\" \"npm run lite-server\" ",
+        "tsc":"tsc",
+        "tsc:w": "tsc -w",
+        "lite-server":"lite-server"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@angular/common": "2.4.5",
+        "@angular/compiler": "2.4.5",
+        "@angular/core": "2.4.5",
+        "@angular/platform-browser": "2.4.5",
+        "@angular/platform-browser-dynamic": "2.4.5",
+        "reflect-metadata":"0.1.9",
+        "core-js":"2.1.4",
+        "systemjs": "0.19.40",
+        "rxjs": "5.0.3",
+        "zone.js":"0.7.6"
+    },
+    "devDependencies": {
+        "concurrently": "^3.1.0",
+        "lite-server": "^2.2.2",
+        "typescript": "~2.0.10"
+    },
+    "repository": {
+    }
+}
